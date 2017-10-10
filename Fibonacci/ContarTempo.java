@@ -6,15 +6,12 @@ public class ContarTempo {
     }
     public static void parar(){
         tempFinal = System.nanoTime();
-        long nanoSegundo=1000000000;
-        long segundo = 60;
+        long nanoSegundo=1000000000;        
         long dif = (tempFinal - tempInicial);       
         long milisegundos = dif%nanoSegundo; 
-        long segundos = dif/nanoSegundo; 
-        long minutos = segundos/segundo;
-        System.out.println("Tempo de execução em Minutos: "+minutos);
-        System.out.println("Tempo de execução em Segundos: "+segundos); 
-        System.out.println("Tempo de exucução em Milisegundos: "+milisegundos);
+        long segundos = dif/nanoSegundo;
+        System.out.println("Tempo de execuÃ§Ã£o em Segundos: "+segundos); 
+        System.out.println("Tempo de exucuÃ§Ã£o em Milisegundos: "+milisegundos);
         
     }
 }
